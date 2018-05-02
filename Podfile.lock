@@ -1,0 +1,30 @@
+PODS:
+  - SwiftFP (1.0.1):
+    - SwiftFP/Main (= 1.0.1)
+  - SwiftFP/Main (1.0.1)
+  - SwiftUtilities/Main (1.4.6):
+    - SwiftFP (~> 1.0.1)
+
+DEPENDENCIES:
+  - SwiftUtilities/Main (from `https://github.com/protoman92/SwiftUtilities.git`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - SwiftFP
+
+EXTERNAL SOURCES:
+  SwiftUtilities:
+    :git: https://github.com/protoman92/SwiftUtilities.git
+
+CHECKOUT OPTIONS:
+  SwiftUtilities:
+    :commit: 7a3e200e71ec3048177eced1e5eb1d201c9e2502
+    :git: https://github.com/protoman92/SwiftUtilities.git
+
+SPEC CHECKSUMS:
+  SwiftFP: 25277c3c13de8b45771702a77443cd1d3c2761b2
+  SwiftUtilities: f7e2e01683284be61a2e5f2b2e5cfa9096cc6b5d
+
+PODFILE CHECKSUM: c958fba9ad310e0d57c9826934297e9c41de2cc7
+
+COCOAPODS: 1.5.0

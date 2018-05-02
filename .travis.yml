@@ -1,0 +1,15 @@
+osx_image: xcode9.3
+language: objective-c
+xcode_workspace: InterfaceUtilities-Swift.xcworkspace
+xcode_scheme: InterfaceUtilities
+xcode_sdk: iphonesimulator11.2
+
+before_install:
+- gem install cocoapods slather xcpretty
+- pod repo update
+
+script:
+- set -o pipefail && xcodebuild clean test -sdk iphonesimulator -workspace InterfaceUtilities-Swift.xcworkspace -scheme InterfaceUtilities -destination 'platform=iOS Simulator,name=iPhone 7' | xcpretty
+- pod lib lint --quick
+
+after_success: slather
